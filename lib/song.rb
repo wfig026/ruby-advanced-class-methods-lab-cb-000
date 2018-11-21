@@ -31,7 +31,7 @@ class Song
   end
 
   def self.find_by_name(name)
-    song_name = self.select{|name| name = name}
+    song_name = self.select{|name| song.name == name}
   end
 
 end
