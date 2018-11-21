@@ -30,4 +30,8 @@ class Song
     new_song
   end
 
+  def self.find_by_name(name)
+    song_name = self.select{|name| name = name}
+  end
+
 end
